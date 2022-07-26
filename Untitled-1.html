@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con html css y js</title>
+    <link rel="stylesheet" href="stilo.css">  // ENLAZAMOS LA HOJA DE ESTILO
+
+
+</head>
+<body>
+        <div class="container">     // CENTRALIZA LA CALCULADORA EN LA PAGINA CREADA (EDITANDO LA CLASE "contenedor") 
+        <div class="calculadora">  // CREAMOS EL EXTERIOR Y CUERPO DE LA CALCULADORA 
+            <div class="display">    // CREAMOS LA PANTALLA DE LA CALCULADORA
+                <div class="valor-superior" data-valor-superior></div> // CREAMOS EL VALOR DE ARRIBA DE LA PANTALLA
+               <div class="valor-inferior" data-valor-inferior></div>  // CREAMOS ELL VALOR DE ABAJO DE LA PANTALLA 
+            </div> 
+        <button class="span2" data-borrar-todo>AC</button>  // SPAN2 PARA QUE OCUPE 2 LUGARE EN VEZ DE 1 //
+        <button data-borrar>DEL</button>   // TANTO DATA O ID SON INDICADORES 
+        <button data-operador>÷</button>
+        <button data-numero >7</button>
+        <button data-numero>8</button>
+        <button data-numero>9</button>
+        <button data-operador>*</button>
+        <button data-numero>4</button>
+        <button data-numero>5</button>
+        <button data-numero>6</button>
+        <button data-operador>+</button>
+        <button data-numero>1</button>
+        <button data-numero>2</button>
+        <button data-numero>3</button>
+        <button data-operador>-</button>
+        <button data-numero>.</button>
+        <button data-numero>0</button>
+        <button data-igual >=</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>   // CREAMOS UNA HOJA DE JVS PARA CODEAR. SE COLOCA ABAJO PARA EVITAR ERRORES AL CARGAR EL CODIGO.
+</body>
+</html>

@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box; /* SIRVE PARA QUE SE QUITEN LOS MARGENES EL PADDING , UNA NORMALIZACION EN LA MISMA PAGINA
+    margin:0;
+    padding: 0;*/
+}
+
+
+.container {
+    display: flex;               /* CENTRAMOS NUESTRA CALCULADORA */
+    justify-content: center;    /* CENTRAMOS NUESTRA CALCULADORA */
+}
+.calculadora {   
+    width:400px;     /* TAMAÑO DE ANCHO */
+    height: 600px;   /* TAMANIO DE LARGO */
+    background-color: #f64730; /* color fuera de nuestros botones osea en el caparazon de la calculadora */
+    display: grid;  /* determina el color dentro de nuestro display */
+    grid-template-columns: repeat(4,80px); /* CREAMOS LAS COLUMNAS DENTRO DE LA CALCULADORA */ 
+    grid-template-rows: 130px repeat(6,80px); /* ORDENAMOS EL TAMAÑO DE CADA BOTON DENTRO DE LA CALCULADORA DE FORMA TAL QUE NO SE SUPER PONGA SOBRE EL DISPLAY */
+    justify-content: center;  /* PARA QUE QUEDEN CENTRADOS LOS NUMEROS */
+    border-radius: 20px;       /* REDONDEA LAS ESQUINAS DE NUESTRA CALCULADORA */
+    padding-top: 40px;       /* PADDING SON ESPACIOS INTERNOS EN LA PARTE SUPERIOR DEL MISMO CONTENEDOR DE LA CALCULADORA */  
+
+}
+
+.calculadora button {
+    font-size: 1.5rem; /* para uqe los numeros se vean un poco mas grandes */
+    background-color: #ffffff44;   /* para definir el color de los botones */
+    border-radius: 0;      /* esta en 0 pero si se pone mas se hace circular cada boton */
+    border: 0px #000000 solid;    /* le da un color de CONTORNO de cada boton */
+    margin:2px;    /* GENERAMOS UN ESPACIO ENTRE BOTON Y BOTON */ 
+
+}
+
+.calculadora button:hover {
+    background-color: rgb(53, 194, 241); /* cada vez que pongamos el mouse por ensima de un boton tiene un color especifico*/
+}
+
+
+.display {
+    height: 120px;   
+    background-color: #344055; /* marcamos el color que va a tener el display */
+    opacity: .7;   /* le eda opacidad al display */
+    grid-column: 1/-1;  /* le crea la forma al display */
+    border: 2px #000000 solid; /* CREAMOS UN TAMAÑO DE BORDE DE DISPLAY JUNTO CON UN COLOR AL MISMO */
+    text-align: end; /* acomoda los numeros para que aparezcan en este caso en la derecha del display */ 
+    padding: 10px 0; /* se separa de arriba y abajo */
+
+
+}
+
+.span2 {
+    grid-column: span 2; /* NOS SIRVE PARA QUE EL BOTON AC OCUPE 2 LUGARES EN VEZ DE 1 */
+}
+.valor-superior {
+    color: rgb(6, 246, 238); /* SE LE PONE UN COLOR DETERMINADO A LOS NUMEROS QUE VAN A IR EN LA DISPLAY EN LA PARTE SUPERIOR*/
+    font-size: 1.2rem; /* SE LE PONE UN TAMAÑO DETERMINADO A LOS NUMEROS DE ARRIBA */
+    margin-bottom: 30px; /* con esta propiedad le damos un margen al valor sup en relacion a los numeros entre ell val inf.*/
+
+}
+
+.valor-inferior {
+    color: white;
+    font-size: 2rem; /* se le pone otro tamaño para diferenciar al valor superior ya que es el indicador primario */
+
+} 
